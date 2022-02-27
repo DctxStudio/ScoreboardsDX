@@ -1,2 +1,2 @@
 # Scoreboards
-a plugin used to create scoreboards on dctxgames
+Scoreboard plugin used by dctxgames to create scoreboards
