@@ -4,6 +4,6 @@ branches:
 - main
 projects:
   Scoreboards:
-    path: ""
-    icon: "icon.png"
+    model: virion
+    type: library
 ...
