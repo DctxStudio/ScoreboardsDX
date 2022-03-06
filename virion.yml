@@ -1,5 +1,5 @@
 name: Scoreboards
-main: Scoreboards\Scoreboards
+antigen: Scoreboards\Scoreboards
 version: 1.0.0
 api: 4.0.0
 author: DctxGamesMC
