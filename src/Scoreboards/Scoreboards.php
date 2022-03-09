@@ -12,7 +12,7 @@ use pocketmine\player\Player;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 
-class Scoreboards extends Scoreboard{
+class Scoreboards extends PluginBase{
 
 	/** @var Scoreboards $instance */
 	private static $instance;
