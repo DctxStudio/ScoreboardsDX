@@ -3,6 +3,5 @@ branches:
 - main
 projects:
   Scoreboards:
-    model: virion
-    type: library
+    path: ""
 ...
