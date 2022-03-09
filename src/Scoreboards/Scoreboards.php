@@ -9,8 +9,10 @@ use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetScorePacket;
 use pocketmine\network\mcpe\protocol\types\ScorePacketEntry;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase;
 
-class Scoreboards implements Scoreboard{
+class Scoreboards extends Scoreboard{
 
 	/** @var Scoreboards $instance */
 	private static $instance;
