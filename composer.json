@@ -1,0 +1,14 @@
+{
+  "name": "scoreboards\scoreboards",
+  "description": "A Scoreboard Framework virion for PocketMine-MP",
+  "type": "library",
+  "license": "",
+  "require": {
+    "pocketmine/pocketmine-mp": "4.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Scoreboards\\Scoreboards\\": "src/"
+    }
+  }
+}
