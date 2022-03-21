@@ -28,4 +28,4 @@ Creating The Scoreboard:
 -----------
 By DctxGamesMC
 - ItzToxicGG
-
+- DanteDev
