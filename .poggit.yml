@@ -1,7 +1,9 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/DctxGamesGB/Scoreboards
 branches:
 - main
+- Virion
 projects:
   Scoreboards:
-    path: ""
+    model: virion
+    type: library
 ...
