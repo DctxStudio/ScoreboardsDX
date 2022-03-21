@@ -2,7 +2,7 @@
   "name": "scoreboards\scoreboards",
   "description": "A Scoreboard Framework virion for PocketMine-MP",
   "type": "library",
-  "license": "",
+  "license": "Apache-2.0",
   "require": {
     "pocketmine/pocketmine-mp": "4.0.0"
   },
