@@ -5,6 +5,16 @@ Scoreboard virion used by dctxgames to create scoreboards
 - Virion Support (you are currently at the virions branch)
 - Plugin Support (at the first branch)
 # example of creating an scoreboard for your minigame
+Virion Support: this is comming soon!
+```yml
+projects:
+  Scoreboards:
+    path: ""
+    libs:
+        - src: # soon!
+        version: ^1.0.0
+        branch: Virion
+```
 usage:
 ```php
 <?php
