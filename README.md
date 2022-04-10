@@ -32,6 +32,8 @@ Removing The Scoreboard:
 		}
 ```
 -----------
+# Info/Author
 By DctxGamesMC
 - ItzToxicGG
 - DanteDev
+- Kostamax
