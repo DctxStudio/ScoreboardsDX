@@ -27,7 +27,9 @@ Creating The Scoreboard:
 ```
 Removing The Scoreboard:
 ```php
-// sooN!
+    if(Scoreboards::getInstance()->getObjectiveName($player)){
+				Scoreboards::getInstance()->remove($player);
+		}
 ```
 -----------
 By DctxGamesMC
