@@ -1,5 +1,5 @@
-# Scoreboards
-Scoreboard plugin used by dctxgames to create scoreboards
+# ScoreboardsDX
+ScoreboardDX plugin used by dctxgames to create scoreboards
 # Features:
 - create Scoreboards
 - Virion Support (at the second branch)
@@ -24,6 +24,10 @@ Creating The Scoreboard:
   $api->setLine($player, 7, "Starting in §a0");
   $api->setLine($player, 8, "          ");
   $api->setLine($player, 9, "§ewww.servername.com";
+```
+Removing The Scoreboard:
+```php
+// sooN!
 ```
 -----------
 By DctxGamesMC
