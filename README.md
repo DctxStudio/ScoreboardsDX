@@ -11,7 +11,7 @@ projects:
   Scoreboards:
     path: ""
     libs:
-        - src: scoreboards\scoreboards
+        - src: Scoreboards\Scoreboards
         version: ^1.0.0
         branch: Virion
 ```
