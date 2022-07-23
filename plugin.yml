@@ -1,5 +1,5 @@
 name: ScoreboardsDX # Plugin Name
-main: ScoreboardsDX\Scoreboards # Path to Source
+main: Scoreboards\Scoreboards # Path to Source
 version: 1.0.1 # Plugin Version
 api: 4.0.0 # Plugin API
 authors: ['ItsToxicGG', 'DanteDevs', 'Kostamax27'] # Plugin Authors
