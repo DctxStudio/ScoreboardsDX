@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ScoreboardsDX;
+namespace Scoreboards;
 
 /**
    Copyright 2022 DctxGamesMC
