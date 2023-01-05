@@ -3,33 +3,15 @@ declare(strict_types=1);
 
 namespace Scoreboards;
 
-/**
-   Copyright 2022 DctxGamesMC
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-*/
-
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\network\mcpe\protocol\RemoveObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetScorePacket;
 use pocketmine\network\mcpe\protocol\types\ScorePacketEntry;
-use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
+use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class Scoreboards
-{
+class Scoreboards extends PluginBase{
 
 	/** @var Scoreboards $instance */
 	private static $instance;
@@ -54,7 +36,7 @@ class Scoreboards
 		$pk->displayName = $displayName;
 		$pk->criteriaName = "dummy";
 		$pk->sortOrder = 0;
-		$player->getNetworkSession()->sendDataPacket($pk);
+		$player->sendDataPacket($pk);
 		$this->scoreboards[$player->getName()] = $objectiveName;
 	}
 
@@ -62,7 +44,7 @@ class Scoreboards
 		$objectiveName = $this->getObjectiveName($player);
 		$pk = new RemoveObjectivePacket();
 		$pk->objectiveName = $objectiveName;
-		$player->getNetworkSession()->sendDataPacket($pk);
+		$player->sendDataPacket($pk);
 		unset($this->scoreboards[$player->getName()]);
 	}
 
@@ -85,7 +67,7 @@ class Scoreboards
 		$pk = new SetScorePacket();
 		$pk->type = $pk::TYPE_CHANGE;
 		$pk->entries[] = $entry;
-		$player->getNetworkSession()->sendDataPacket($pk);
+		$player->sendDataPacket($pk);
 	}
 
 	public function getObjectiveName(Player $player): ?string{
