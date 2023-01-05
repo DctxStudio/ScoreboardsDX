@@ -2,6 +2,7 @@
 branches:
 - main
 - Virion
+- PM3
 projects:
   Scoreboards:
     model: virion
